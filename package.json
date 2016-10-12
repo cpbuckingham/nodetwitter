@@ -1,0 +1,41 @@
+{
+  "name": "nodetwitter",
+  "description": "A twitter demo app in nodejs",
+  "version": "0.0.1-59",
+  "repository": "https://github.com/cpbuckingham/nodetwitter",
+  "private": false,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "6.3.1"
+  },
+  "dependencies": {
+    "async": "latest",
+    "connect-flash": "latest",
+    "connect-mongo": "latest",
+    "express": "3.5.0",
+    "forever": "latest",
+    "gzippo": "latest",
+    "jade": "latest",
+    "mongoose": "latest",
+    "notifier": "latest",
+    "passport": "^0.3.2",
+    "passport-facebook": "latest",
+    "passport-github": "latest",
+    "passport-github2": "^0.1.9",
+    "passport-google-oauth": "latest",
+    "passport-local": "latest",
+    "passport-twitter": "~1.0.2",
+    "underscore": "latest",
+    "view-helpers": "latest"
+  },
+  "devDependencies": {
+    "ava": "latest",
+    "mocha": "^2.4.5",
+    "nodemon": "latest",
+    "should": "latest",
+    "supertest": "latest"
+  },
+  "subdomain": "nodetwitter"
+}

@@ -1,0 +1,25 @@
+extends ../layouts/default
+
+block content
+  .container.analytics-container
+    h1 Node Twitter Analytics Data
+    table.table.table-bordered
+      thead
+        tr
+          th User
+          th IP
+          th URL
+          th Time
+      tbody
+        each analytic in analytics
+          tr
+            - if (analytic.user != null && analytic.url != null)
+              td #{analytic.user.name}
+              td #{analytic.ip}
+              td #{analytic.url}
+              td #{analytic.createdAt}
+
+
+  - if (pages > 1)
+    ul.pagination
+      != createPagination(pages, page)
